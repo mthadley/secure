@@ -1,7 +1,6 @@
 <script lang="ts">
   import { encrypt } from '$lib/encryption';
   import { sleep } from '$lib/sleep';
-  import {} from '$env/static/public';
 
   const maxPlaintextLength = 120;
 
