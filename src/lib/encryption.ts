@@ -53,9 +53,7 @@ export const encrypt = async ({
   );
 
   return btoa(
-    [...salt, ...iv, ...new Uint8Array(ciphertext)]
-      .map((number) => String.fromCharCode(number))
-      .join('')
+    String.fromCharCode(...[...salt, ...iv, ...new Uint8Array(ciphertext)])
   );
 };
 
